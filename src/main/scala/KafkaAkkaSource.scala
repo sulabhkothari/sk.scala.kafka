@@ -11,7 +11,7 @@ class KafkaAkkaSource extends GraphStage[SourceShape[String]] {
   val shape1 = SourceShape.of(out)
 
   override def shape = shape1
-  val consumer = Consumer.consumeFromKafka(mutable.Queue.empty).iterator
+  val consumer = KafkaConsumer.consumeFromKafka(mutable.Queue.empty).iterator
 
   override def createLogic(inheritedAttributes: Attributes): GraphStageLogic =
     new GraphStageLogic(shape) {

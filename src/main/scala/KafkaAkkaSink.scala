@@ -21,7 +21,7 @@ class KafkaAkkaSink extends GraphStage[SinkShape[String]] {
           Thread.sleep(1000)
           val msg = grab(in)
           if (msg != "") {
-            Producer.writeToKafka("test9999", msg)
+            KafkaProducer.writeToKafka("test9999", msg)
             println("Perpetual msg --> " + msg)
           }
           pull(in)

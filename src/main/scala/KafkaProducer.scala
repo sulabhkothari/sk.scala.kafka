@@ -2,7 +2,7 @@
 import java.util.Properties
 import org.apache.kafka.clients.producer._
 
-object Producer {
+object KafkaProducer {
   def main(args: Array[String]): Unit = {
     writeToKafka("test9999", "branching")
   }

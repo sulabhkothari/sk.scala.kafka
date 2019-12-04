@@ -7,7 +7,7 @@ import scala.collection.JavaConverters._
 import scala.collection.immutable.Queue
 import scala.collection.mutable
 
-object Consumer {
+object KafkaConsumer {
   val props = new Properties()
   props.put("bootstrap.servers", "localhost:9092")
   props.put("key.deserializer", "org.apache.kafka.common.serialization.StringDeserializer")

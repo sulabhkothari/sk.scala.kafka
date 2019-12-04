@@ -12,5 +12,6 @@ libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-stream-testkit" % akkaVersion,
   "com.typesafe.akka" %% "akka-testkit" % akkaVersion,
   "org.scalatest" %% "scalatest" % scalaTestVersion,
-  "org.apache.kafka" %% "kafka" % "2.1.0"
+  //"org.apache.kafka" %% "kafka" % "2.1.1",
+  "com.typesafe.akka" %% "akka-stream-kafka" % "1.1.0"
 )
